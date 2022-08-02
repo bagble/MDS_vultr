@@ -1,0 +1,5 @@
+# envirment variable
+.env
+
+# server data
+result.json
