@@ -7,7 +7,6 @@
 ## Requirements
 * [Vultr](https://www.vultr.com/?ref=9163513-8H) account
 * python 3.9 or higher `requirement package: dotenv`
-* git
 ---
 ## Installation
 * Install Requirements Programs
