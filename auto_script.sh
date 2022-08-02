@@ -29,3 +29,4 @@ sudo ufw allow 5005
 chmod +x /root/mc/run
 /root/mc/run
 kill $(pgrep java)
+reboot
