@@ -26,9 +26,19 @@ VULTR_SCRIPT_ID=<Vultr Script ID> # after
 ```bash
 #!/bin/sh
 
-wget https://raw.githubusercontent.com/bagble/MDS_vultr/main/auto_script.sh -O autoS.sh
-chmod +x ./autoS.sh
-./autoS.sh
+wget https://raw.githubusercontent.com/bagble/MDS_vultr/main/auto_script.sh -O /root/auto_script.sh
+wget https://raw.githubusercontent.com/bagble/MDS_vultr/main/mdsStartup -O /etc/init.d/mdsStartup
+
+# Permission
+chmod +x /etc/init.d/mdsStartup
+chmod +x /root/auto_script.sh
+
+# Startup
+sudo update-rc.d mdsStartup defaults
+sudo systemctl enable mdsStartup
+
+# Reboot
+bash -c "sleep 5; reboot"&
 ```
 * Add Script
 * Run `python3 check_setup_script_id.py`
