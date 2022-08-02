@@ -25,5 +25,5 @@ sudo ufw allow 25565
 sudo ufw allow 5005
 
 # Start server
-chmod +x /root/server/run
-/root/server/run
+chmod +x /root/mc/run
+/root/mc/run
