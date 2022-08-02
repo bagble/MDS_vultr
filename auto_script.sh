@@ -26,5 +26,4 @@ sudo apt install jq -y
 
 # Start server
 chmod +x /root/server/run
-screen -S MDS
-/root/server/run
+screen -S MDS /root/server/run
