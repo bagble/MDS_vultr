@@ -13,7 +13,7 @@ wget https://api.purpurmc.org/v2/purpur/$VERSION/latest/download -O /root/server
 # Download server runner By - monun
 wget https://raw.githubusercontent.com/bagble/MDS_vultr/master/run -O /root/server/run
 # OP
-wget $OP_LIST -O /root/server/ops.json
+wget $OP_LIST -O /server/ops.json
 
 # Download requirements programs
 sudo apt-get install openjdk-18-jdk -y
