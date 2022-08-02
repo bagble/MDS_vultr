@@ -9,16 +9,16 @@ sudo apt update && sudo apt upgrade -y
 # Setup
 mkdir -p /root/server
 # Download purpur latest version
-wget https://api.purpurmc.org/v2/purpur/$VERSION/latest/download -O force.jar
+wget -P /root/ https://api.purpurmc.org/v2/purpur/$VERSION/latest/download -O force.jar
 # Download server runner By - monun
-wget https://raw.githubusercontent.com/bagble/MDS_vultr/master/run -O run
+wget -P /root/ https://raw.githubusercontent.com/bagble/MDS_vultr/master/run -O run
 # OP
-wget $OP_LIST -O ops.json
+wget -P /root/ $OP_LIST -O ops.json
 
 # Move Files
-mv force.jar /root/server/
-mv run /root/server/
-mv ops.json /root/server/
+mv /root/force.jar /root/server/
+mv /root/run /root/server/
+mv /root/ops.json /root/server/
 
 # Download requirements programs
 sudo apt-get install openjdk-18-jdk -y
