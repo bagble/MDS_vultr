@@ -27,4 +27,4 @@ sudo ufw allow 5005
 
 # Start server
 chmod +x /root/mc/run
-screen -S MDS /root/mc/run
+screen -dmS MDS /root/mc/run
