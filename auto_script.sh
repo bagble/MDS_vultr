@@ -19,6 +19,10 @@ wget $OP_LIST -O /root/server/ops.json
 sudo apt-get install openjdk-18-jdk -y
 sudo apt install jq -y
 
+# Open ports
+sudo ufw allow 25565
+sudo ufw allow 5005
+
 # Start server
 chmod +x /root/server/run
 /root/server/run
