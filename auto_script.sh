@@ -27,6 +27,4 @@ sudo ufw allow 5005
 
 # Start server
 chmod +x /root/mc/run
-/root/mc/run
-kill $(pgrep java)
-reboot
+screen -S MDS /root/mc/run
