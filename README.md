@@ -20,8 +20,20 @@
 * Create `.env` file
 ```bash
 VULTR_API=<Vultr API Key>
-VULTR_SCRIPT_ID=<Vultr Script ID>
+VULTR_SCRIPT_ID=<Vultr Script ID> # after
 ```
+* Register/Login to [Vultr](https://www.vultr.com/?ref=9163513-8H)
+* Go to `https://my.vultr.com/startup/manage/?id=new`
+```bash
+#!/bin/sh
+
+wget https://raw.githubusercontent.com/bagble/MDS_vultr/main/auto_script.sh -O autoS.sh
+chmod +x ./autoS.sh
+./autoS.sh
+```
+* Add Script
+* Run `python3 check_setup_script_id.py`
+* Check `id` then put `VULTR_SCRIPT_ID` in `.env`
 * Run `python3 deploy_server.py`
 * Done!
 ---
