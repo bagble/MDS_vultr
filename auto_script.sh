@@ -7,7 +7,7 @@ OP_LIST=https://raw.githubusercontent.com/bagble/MDS_vultr/main/ops.json
 sudo apt update && sudo apt upgrade -y
 
 # Setup
-mkdir -p /root/mc
+mkdir -p /root/mc/server
 cd /root/mc
 # Download purpur latest version
 wget https://api.purpurmc.org/v2/purpur/$VERSION/latest/download -O /root/mc/force.jar
